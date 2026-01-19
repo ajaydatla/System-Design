@@ -11,7 +11,7 @@ public class UserNameRedisService {
     private RedisTemplate<String, String> redisTemplate;
 
     public void saveUser(String username) {
-        redisTemplate.
+        
         redisTemplate.opsForValue().set(username, "value"+username);
     }
 
